@@ -1,0 +1,37 @@
+ :root {
+    --bs-primary: #D6F3F3;
+    --bs-secondary: #8ED2D0;
+    --bs-accent: #FFE770;
+    --bs-success: #5cb85c;
+    --bs-info: #5bc0de;
+    --bs-warning: #f0ad4e;
+    --bs-danger: #d9534f; 
+    --bs-light: #ffffff; 
+    --bs-dark: #000000;
+  }
+
+  body {
+    background-color: var(--bs-light);
+    color: var(--bs-dark);
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .heading1 {
+    font-family: "Fredoka", serif;
+    font-weight: 600;
+    font-style: normal;
+    white-space: nowrap;
+  }
+
+  .btn-primary {
+    --bs-btn-bg:#FFE770;
+    --bs-btn-color: black;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-color: black;
+  }
+
+  .bg-primary {
+    background-color: var(--bs-primary);
+  }
