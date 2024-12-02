@@ -10,49 +10,157 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 
-    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header>
-        <nav class="navbar bg-light navbar-expand-md justify-content-md-between">
-            <div class="container-md">
-                <a href="#home" class="navbar-brand">
-                    <img src="images/Logo.svg" alt="logo" width="150"  class="d-inline-block align-text-top">
-                </a>
-                <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#togglerNav"
-                aria-controls="togglerNav"
-                aria-label="toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="togglerNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class=" nav-link" href="#">Home</a></li>
-                    <li class="nav-item"><a class=" nav-link" href="#">Adoption</a></li>
-                    <li class="nav-item"><a class=" nav-link" href="#">Contact</a></li>
-                </ul>
-                </div>
+    <nav class="navbar bg-light navbar-expand-md justify-content-md-between sticky-top">
+        <div class="container-md">
+            <a href="#home" class="navbar-brand">
+                <img src="images/Logo.svg" alt="logo" width="150"  class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#togglerNav"
+            aria-controls="togglerNav"
+            aria-label="toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="togglerNav">
+            <ul class="navbar-nav ps-2">
+                <li class="nav-item"><a class=" nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class=" nav-link" href="adoption.html">Adoption</a></li>
+                <li class="nav-item"><a class=" nav-link" href="#">Contact</a></li>
+            </ul>
             </div>
-        </nav>
-        <div class="position-relative">
-            <picture>
-               <source srcset="images/500x600.jpg"
-               media="(max-width: 500px)"></source>
-               <source srcset="images/1100x950.jpg"
-               media="(max-width: 999px)"></source>
-               <source srcset="images/1500x1000.jpg"
-               media="(min-width: 1000px)"></source>
-               <img src="images/1100x950.jpg" alt="" class="img-fluid">
-            </picture>
-            <h1 class="heading1 text-center position-absolute bottom-0 start-50 translate-middle-x pb-5 m-3"> Love, Adopt, Change a life</h1>
-            <button type="button" class="btn btn-primary  border-0 position-absolute bottom-0 start-50 translate-middle-x ps-3 pe-3 m-3"> Adoption</button>
         </div>
-        <div class="container bg-primary">
-            <h2 class="text-center">About Us</h2>
-            <p>We believe every animal deserves a chance at happiness and work to connect them with adopters, foster families, and supporters who share our vision. At Pawsitive Futures, we’re here to make the adoption process simple,and rewarding for both you and your new furry friend.</p>
+    </nav>
+    <header>
+        <div class="position-relative d-flex justify-content-center">
+            <div class="">
+                <picture>
+                <source srcset="images/768x768.jpg"
+                media="(max-width: 768px)"></source>
+                <source srcset="images/1100x1100.jpg"
+                media="(max-width: 999px)"></source>
+                <source srcset="images/1250x850.jpg"
+                media="(min-width: 1000px)"></source>
+                <img src="images/1100x950.jpg" alt="" class="img-fluid banner-image mb-lg-5">
+                </picture>
+            </div>
+            <div class="position-absolute top-0  text-center text-start pt-5">
+                <h1 class="heading1 mb-4">Love, Adopt, Change a Life</h1>
+                <a href="adoption.html" class="btn btn-primary border-0 ps-3 pe-3 pt-2 pb-2 text-uppercase mb-3">Adoption</a>
+            </div>
+        </div>
+        <div class="bg-primary pb-3 pt-3">
+            <div class="container">
+                <h2 class="text-center">About Us</h2>
+                <p>We believe every animal deserves a chance at happiness and work to connect them with adopters, foster families, and supporters who share our vision. At Pawsitive Futures, we’re here to make the adoption process simple,and rewarding for both you and your new furry friend.</p>
+            </div>
         </div>
     </header>
+    <main class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="card card-responsive border-0 bg-primary mt-5">
+                    <img src="images/Heart.svg" alt="heart" height="70" class="card-img-top mt-3">
+                    <div class="card-body">
+                    <h2 class="card-title heading1">Donation</h2>
+                    <p class="card-text">Donations help provide food, medical care, and shelter for animals in need. Every contribution, big or small, brings us one step closer to creating a brighter future for these animals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="card card-responsive border-0 bg-primary mt-5">
+                    <img src="images/home.svg" alt="heart" height="70" class="card-img-top mt-3">
+                    <div class="card-body">
+                    <h2 class="card-title heading1">Adoption</h2>
+                    <p class="card-text">Looking for a furry friend? Explore our adoption program and meet cats, dogs, and bunnies waiting for their forever homes. Together, we can give them the love and care they deserve.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="card card-responsive border-0 bg-primary mt-5">
+                    <img src="images/clinic.svg" alt="heart" height="70" class="card-img-top mt-3">
+                    <div class="card-body">
+                    <h2 class="card-title heading1">Clinic</h2>
+                    <p class="card-text">Our clinic offers essential medical care to ensure every animal is healthy and ready for adoption. From check-ups to vaccinations, we prioritize their well-being to help them thrive in their new homes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
+                <div class="card card-responsive border-0 bg-primary mt-5">
+                    <img src="images/Paws.svg" alt="heart" height="70" class="card-img-top mt-3">
+                    <div class="card-body">
+                    <h2 class="card-title heading1">Fostering</h2>
+                    <p class="card-text">Fostering is a great way to provide temporary care for animals while they wait for their forever homes. You’ll give them a safe and loving environment, and in return, you’ll experience the joy of making a difference in their lives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <a href="" class="btn btn-primary border-0 mt-4 mb-5 text-uppercase"> Contact Us</a>
+        </div>
+        <div class="row justify-content-center mb-5">
+            <h2 class="text-center">Adopters</h2>
+            <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center">
+                <div class="card card-responsive bg-primary mt-3 border-0 d-flex flex-column flex-lg-row card-horizontal">
+                    <img src="images/500x550.jpg" class="card-img-top" alt="A girl and a dog">
+                    <div class="card-body">
+                    <h5 class="card-title">Billy and Sarah</h5>
+                    <p class="card-text">“Adopting Billy was the best decision I’ve ever made,” Sarah shared. “He’s brought so much joy into my life, and I can’t imagine a day without him. It feels like he rescued me just as much as I rescued him.”</p>
+                    <a href="#" class="btn btn-secondary border-0">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center border-0">
+                <div class="card card-responsive bg-primary mt-3 border-0 d-flex flex-column flex-lg-row card-horizontal">
+                    <img src="images/500x550 3.jpg" class="card-img-top" alt="A girl and a dog" >
+                    <div class="card-body">
+                    <h5 class="card-title">Jake and Mocha</h5>
+                    <p class="card-text">“When Mocha came into my life, everything changed,” Jake said with a smile. “He’s my best friend, my adventure buddy, and the best listener I’ve ever known. Every day with him feels like a gift—I didn’t just adopt a dog; I found a lifelong companion.”</p>
+                    <a href="#" class="btn btn-secondary border-0">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </main>
+
+
+    <footer class=bg-secondary text-dark text-center>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-4 col-md-6">
+                    <ul class="list-unstyled d-flex justify-content-center mb-0 mt-5">
+                        <li class="mx-3"><a href="#home" class="text-dark text-decoration-none">Home</a></li>
+                        <li class="mx-3"><a href="#adoption" class="text-dark text-decoration-none">Adoption</a></li>
+                        <li class="mx-3"><a href="#contact" class="text-dark text-decoration-none">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 mb-4 d-flex justify-content-center col-md-6 mt-md-5">
+                    <a href="https://facebook.com" target="_blank" class="text-dark me-3"><i class="bi bi-facebook" style="font-size: 1.5rem;"></i></a>
+
+                    <a href="https://twitter.com" target="_blank" class="text-dark me-3">
+                        <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank" class="text-dark">
+                        <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+                    </a>
+                </div>
+                <div class="col-12 mb-4 d-flex justify-content-center">
+                    <p>© 2024 Pawsitive Futures. All rights reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
     

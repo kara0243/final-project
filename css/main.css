@@ -1,21 +1,28 @@
  :root {
-    --bs-primary: #D6F3F3;
-    --bs-secondary: #8ED2D0;
-    --bs-accent: #FFE770;
+    --bs-primary-rgb: 214, 243, 243;
+    --bs-secondary-rgb: 142, 210, 208;
     --bs-success: #5cb85c;
     --bs-info: #5bc0de;
-    --bs-warning: #f0ad4e;
+    --bs-warning-rgb: 255, 231, 112;
     --bs-danger: #d9534f; 
-    --bs-light: #ffffff; 
-    --bs-dark: #000000;
+    --bs-light-rgb: 255, 255, 255; 
+    --bs-dark-rgb: 0, 0, 0;
   }
 
   body {
-    background-color: var(--bs-light);
-    color: var(--bs-dark);
+    background-color: var(--bs-light-rgb);
+    color: var(--bs-dark-rgb);
     font-family: "Poppins", serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
+  }
+
+  a {
+    color: var(--bs-dark-rgb);
+  }
+
+  a:hover {
+    color: #8ED2D0;
   }
 
   .heading1 {
@@ -25,13 +32,51 @@
     white-space: nowrap;
   }
 
+  .heading2 {
+    font-family: "Fredoka", serif;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  .heading3 {
+    font-family: "poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+  }
+
   .btn-primary {
     --bs-btn-bg:#FFE770;
     --bs-btn-color: black;
-    --bs-btn-hover-bg: white;
-    --bs-btn-hover-color: black;
+    --bs-btn-hover-bg: black;
+    --bs-btn-hover-color: white;
   }
 
-  .bg-primary {
-    background-color: var(--bs-primary);
+  .btn-secondary {
+    --bs-btn-bg: #8ED2D0;
+    --bs-btn-color: black;
+    --bs-btn-hover-bg: black;
+    --bs-btn-hover-color: white;
   }
+
+  @media (max-width: 768px) {
+    .card-responsive {
+        max-width: 20rem;
+        margin: 0 auto; 
+    }
+}
+
+@media (min-width: 1000px) {
+  .card-horizontal img {
+    width: 100%;
+    max-width: 300px;
+    height: auto; 
+    object-fit: cover;
+  }
+  .banner-image {
+    border-radius: 50px;
+    position: relative;
+  }
+
+
+}
