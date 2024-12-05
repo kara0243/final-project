@@ -41,13 +41,16 @@
     visibility: visible;
   }
 
-
   a {
     color: var(--bs-dark-rgb);
   }
 
   a:hover {
     color: #8ED2D0;
+  }
+
+  footer a:hover {
+    color: white !important;
   }
 
   .heading1 {
