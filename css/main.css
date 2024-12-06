@@ -17,6 +17,29 @@
     font-style: normal;
   }
 
+  body {
+    position: relative;
+  }
+  
+  .skip-link {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 3px solid #8ED2D0;
+    text-decoration: none;
+    top: -50px;
+    position: absolute;
+    transition: top 0.3s ease-in-out;
+    z-index: 5;
+  }
+  
+  .skip-link:focus {
+    top: 10px;
+    outline: none;
+  }
+
   .container {
     max-width: 100%;
     padding-left: 20px;
