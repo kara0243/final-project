@@ -14,6 +14,10 @@
 
     <link rel="icon" type="image/svg" href="images/favicon.svg">
 
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
@@ -22,7 +26,7 @@
     <nav class="navbar bg-light navbar-expand-md justify-content-md-between sticky-top">
         <div class="container-md">
             <a href="index.html" class="navbar-brand">
-                <img src="images/Logo.svg" alt="logo" width="150"  class="d-inline-block align-text-top">
+                <img src="images/Logo.svg" alt="mainlogo" width="150"  class="d-inline-block align-text-top">
             </a>
             <button class="navbar-toggler"
             type="button"
@@ -55,7 +59,7 @@
             </div>
         </div>
     </nav>
-    <header>
+    <header role="banner">
         <div class="position-relative d-flex justify-content-center">
             <div class="banner">
                 <picture>
@@ -65,11 +69,11 @@
                 media="(max-width: 999px)"></source>
                 <source srcset="images/1250x850.jpg"
                 media="(min-width: 1000px)"></source>
-                <img src="images/1100x950.jpg" alt="" class="img-fluid banner-image mb-lg-5">
+                <img src="images/1100x950.jpg" alt="an image of a cat with a dog" class="img-fluid banner-image mb-lg-5">
                 </picture>
             </div>
             <div class="position-absolute top-0  text-center text-start pt-5">
-                <h1 class="heading1 mb-4">Love, Adopt, Change a Life</h1>
+                <h1 class="heading1 mb-4 animate__animated animate__fadeInDown">Love, Adopt, Change a Life</h1>
                 <a href="adoption.html" class="btn btn-primary border-0 ps-3 pe-3 pt-2 pb-2 text-uppercase mb-3">Adoption</a>
             </div>
         </div>
@@ -80,7 +84,7 @@
             </div>
         </div>
     </header>
-    <main class="container">
+    <main class="container" role="main">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
                 <div class="card hover-scale card-responsive border-0 bg-primary mt-5">
@@ -128,7 +132,7 @@
                 <div class="card hover-scale  card-responsive bg-primary mt-3 mb-3 border-0 d-flex flex-column flex-lg-row card-horizontal">
                     <img src="images/500x550.jpg" class="card-img-top p-3" alt="A girl and a dog">
                     <div class="card-body">
-                    <h5 class="card-title">Billy and Sarah</h5>
+                    <h5 class="heading1 card-title">Billy and Sarah</h5>
                     <p class="card-text">“Adopting Billy was the best decision I’ve ever made,” Sarah shared. “He’s brought so much joy into my life, and I can’t imagine a day without him. It feels like he rescued me just as much as I rescued him.”</p>
                     <a href="#" class="btn btn-secondary border-0">Learn More</a>
                     </div>
@@ -136,9 +140,9 @@
             </div>
             <div class="col-12 col-md-6 col-lg-6 d-flex justify-content-center border-0">
                 <div class="card hover-scale  card-responsive bg-primary mt-3 mb-3 border-0 d-flex flex-column flex-lg-row card-horizontal">
-                    <img src="images/500x550 3.jpg" class="card-img-top p-3" alt="A girl and a dog" >
+                    <img src="images/500x550 3.jpg" class="card-img-top p-3" alt="A man and a dog" >
                     <div class="card-body">
-                    <h5 class="card-title">Jake and Mocha</h5>
+                    <h5 class="heading1 card-title">Jake and Mocha</h5>
                     <p class="card-text">“When Mocha came into my life, everything changed,” Jake said with a smile. “He’s my best friend, my adventure buddy, and the best listener I’ve ever known. Every day with him feels like a gift—I didn’t just adopt a dog; I found a lifelong companion.”</p>
                     <a href="#" class="btn btn-secondary border-0">Learn More</a>
                     </div>
@@ -148,7 +152,7 @@
     </main>
 
 
-    <footer id="footer" class=bg-secondary text-dark text-center>
+    <footer id="footer" class=bg-secondary text-dark text-center role="contentinfo">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-4 col-md-6">
