@@ -22,10 +22,10 @@ I started by thinking about the best Bootstrap components to use for each part o
 The entire process was straightforward but time-consuming, especially when learning how to select the best class for each part and function. I noticed that changing styles in CSS is sometimes easier than editing classes in Bootstrap, as changes often need to be applied to multiple elements.
 
 
-### Challenges and Solutions
+### Challenges
 
 1. **Adding Custom Colors**:
-   - **Challenge**: My custom colors needed to be in RGB format which you helpt me with, which I initially found confusing.
+   - **Challenge**: My custom colors needed to be in RGB format which you helped me with, which I initially found confusing.
 
 2. **Navigation Dropdown Menu**:
    - **Challenge**: The "Adoption" link needed to work as a page link without triggering the dropdown menu so I added CSS so the dropdown to open on hover instead of click.
